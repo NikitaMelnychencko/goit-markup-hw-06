@@ -667,3 +667,10 @@ footer {
   height: 18px;
   fill: #000000;
 }
+.js-speaker-form {
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  resize: none;
+}

@@ -610,9 +610,51 @@ footer {
 .link-linkedin:focus {
   background-color: var(--accent-color);
 }
+.footer .form-footer {
+  margin-left: 93px;
+}
+.footer .form-text {
+  line-height: 1.142;
+  text-transform: uppercase;
+
+  color: var(--primary-background-color);
+}
 .footer .grup {
   display: flex;
+  align-items: baseline;
+}
+.form-footer .form-field {
+  margin-top: 20px;
+}
+.form-footer .form-field input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 0 15px 16px;
+
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.form-footer .form-field input::placeholder {
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer .grup .buttun.submit {
+  display: flex;
   align-items: center;
+  text-align: center;
+
+  padding: 10px 28px;
+  margin-left: 10px;
+}
+.footer .svg-send {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
 }
 
 /*========END Footer==============*/
@@ -681,6 +723,8 @@ footer {
 textarea {
   padding: 12px 16px;
   resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 .form-field {
   display: flex;
@@ -744,16 +788,13 @@ textarea {
   display: none;
 }
 
-.button-modal {
+.buttun.submit {
   display: inline-block;
-  cursor: pointer;
   padding: 10px 55px 10px 55px;
   font-weight: bold;
-  font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--primary-background-color);
   background: var(--accent-secondary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }

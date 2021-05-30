@@ -47,36 +47,40 @@
           </svg>
         </button>
 
-        <h2>Оставьте свои данные, мы вам перезвоним</h2>
-        <form class="js-speaker-form">
-          <label for="name">Имя</label>
-          <input type="text" name="name" id="name">
-          <svg class="svg-buttun">
-            <use href="./images/icon.svg#icon-human-modal-+"></use>
-          </svg>
-
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel">
-          <svg class="svg-buttun">
-            <use href="./images/icon.svg#icon-phone-modal"></use>
-          </svg>
-
-          <label for="email">Почта</label>
-          <input type="email" name="email" id="email">
-          <svg class="svg-buttun">
-            <use href="./images/icon.svg#icon-mail-modal"></use>
-          </svg>
-
-          <label for="feedback">Коментарий</label>
-          <textarea name="feedback" rows="5" id="feedback" placeholder="Введите текст"></textarea>
-          <div role="agreement-conditions">
+        <form class="form js-speaker-form">
+          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name">
+            <svg class="svg-human">
+              <use href="./images/icon.svg#icon-human-modal"></use>
+            </svg>            
+          </div>
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel">
+            <svg class="svg-phone">
+              <use href="./images/icon.svg#icon-phone-modal"></use>
+            </svg>            
+          </div>
+          <div class="form-field">
+            <label for="email">Почта</label>
+            <input type="email" name="email" id="email">
+            <svg class="svg-mail">
+              <use href="./images/icon.svg#icon-mail-modal"></use>
+            </svg> 
+          </div>
+          <div class="form-field ">
+            <label for="feedback">Комментарий</label>
+            <textarea name="feedback" rows="5" id="feedback" placeholder="Введите текст"></textarea>  
+          </div>
+          
+          <div class="checkbox-agreement-conditions" role="agreement-conditions">
             <input type="checkbox" name="agreement-conditions" value="agreement-conditions" id="agreement-conditions">
-            <label for="agreement-conditions">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span> </label>
+            <label for="agreement-conditions">Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-link">Условия договора</a> </label>
           </div>
 
-
-
-          <button type="submit">Отправить</button>
+          <button class="button-modal" type="submit">Отправить</button>
         </form>
       </div>
     </div>
@@ -320,7 +324,21 @@
           </svg> <span class="hide" lang="en">Linkedin</span></a></li>
         </ul>
       </div>
+      <form class="form-footer js-speaker-form">
+        <b>Подпишитесь на рассылку</b>
+        <div class="grup">
+          <div class="form-field">
+            <input type="email" name="email" id="email">
+          </div>
+          <button class="button" type="submit">Подписаться
+            <svg class="svg-social-network">
+              <use href="./images/icon.svg#icon-send"></use>
+            </svg>
+          </button>          
+        </div>
+      </form>
     </div>
+
   </footer>
   <!--Auto height header -->
   <script>

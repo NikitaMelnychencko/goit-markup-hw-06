@@ -264,13 +264,14 @@
   </script>
   <script>
     (() => {
-      document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-        e.preventDefault();
-
-        new FormData(e.currentTarget).forEach((value, name) =>
-          console.log(`${name}: ${value}`),
-        );
-      });
+      document.querySelectorAll('.js-speaker-form').forEach(elem =>
+        elem.addEventListener('submit', e => {
+          e.preventDefault();
+          new FormData(e.currentTarget).forEach((value, name) =>
+            console.log(`${name}: ${value}`),
+          );
+        }),
+      );
     })();
   </script>
 </body>

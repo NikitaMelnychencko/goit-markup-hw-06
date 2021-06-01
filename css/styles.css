@@ -754,7 +754,7 @@ textarea {
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field label {
+.form-field .text-lable {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -782,8 +782,22 @@ textarea {
   margin-bottom: 30px;
 }
 .checkbox-agreement-conditions input[type='checkbox'] {
+  /*-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
   width: 16px;
   height: 15px;
+  position: absolute;*/
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .checkbox-agreement-conditions .text,
 .checkbox-agreement-conditions .checkbox-link {
@@ -796,6 +810,30 @@ textarea {
   text-decoration-line: underline;
   color: var(--accent-color);
 }
+.icon-check {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+  transform: scale(0.9);
+}
+.checkbox:checked + .icon-check {
+  width: 16px;
+  height: 15px;
+  border-color: var(--accent-color);
+  background-origin: border-box;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  transform: scale(1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .form-field .svg-phone,
 .form-field .svg-mail,
 .form-field .svg-human {

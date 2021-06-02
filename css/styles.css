@@ -611,7 +611,7 @@ footer {
   background-color: var(--accent-color);
 }
 .footer .form-footer {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .footer .form-text {
   line-height: 1.142;
@@ -622,8 +622,6 @@ footer {
 .footer .grup {
   display: flex;
   align-items: baseline;
-}
-.form-footer .form-field {
   margin-top: 20px;
 }
 .form-footer .form-field input {
@@ -693,20 +691,23 @@ footer {
   transform: translate(-50%, -50%);
 
   width: 528px;
-  height: 581px;
-
+  padding: 40px;
   background: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 .buttun.close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   height: 30px;
   width: 30px;
-  margin: 8px 8px 0 490px;
   padding: 0;
 
   border-radius: 50%;
@@ -784,13 +785,15 @@ textarea {
   margin-bottom: 30px;
 }
 .checkbox-agreement-conditions input[type='checkbox'] {
-  /*-webkit-appearance: none;
+  -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   position: absolute;
   width: 16px;
   height: 15px;
-  position: absolute;*/
+  bottom: 126px;
+  left: 52px;
+  /*position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -799,7 +802,7 @@ textarea {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  overflow: hidden;*/
 }
 .checkbox-agreement-conditions .text,
 .checkbox-agreement-conditions .checkbox-link {
@@ -821,13 +824,10 @@ textarea {
   transform: scale(0.9);
 }
 .checkbox:checked + .icon-check {
-  width: 16px;
-  height: 15px;
   border-color: var(--accent-color);
   background-origin: border-box;
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
 
   transform: scale(1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -835,14 +835,19 @@ textarea {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/*.checkbox:focus + .icon-check {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 0 2px red;
+}
+.checkbox:checked:focus + .icon-check {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 0 2px red;
+}*/
 .form-field .svg-phone,
 .form-field .svg-mail,
 .form-field .svg-human {
   position: absolute;
   width: 18px;
   height: 18px;
-  top: 50%;
+  top: 29px;
   left: 12px;
   fill: #000000;
 
